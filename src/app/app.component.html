@@ -1,0 +1,16 @@
+<div>
+    <h1>My Goals</h1>
+    <!-- <ul>
+      <li *ngFor ='let goal of goals'>
+        {{goal}}
+      </li>
+    </ul> -->
+    <!-- <p>My goal for today is{{ goal }}</p> --> 
+    <hr>
+    <ul>
+        <li *ngFor='let goal of goals'>
+          {{goal.name}}
+        </li>
+    </ul>
+    <p *ngIf='goals.length > 5'>Your goals are too many</p>
+  </div>
